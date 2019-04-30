@@ -1,4 +1,4 @@
-# HHKB Lite2 日版在windows下
+# HHKB Lite2 for mac 日版 在windows下
 ## 键位设置
 * 1 usb off 2 notused on 3 backspace&delete exchange off 4 alt&cmd exchange off
 * keyboardshield修改键位
