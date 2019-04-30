@@ -2,6 +2,7 @@
 ## 键位设置
 * 1 usb off 2 notused on 3 backspace&delete exchange off 4 alt&cmd exchange off
 * keyboardshield修改键位
+![hhkb4mac.jp.keysetting4windows10](https://github.com/RayXu14/Tools/blob/master/img/hhkb4mac.jp.keysetting4windows10.PNG)
 
 
 ## 键位情况
