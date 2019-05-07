@@ -26,7 +26,7 @@
 
 今天申请提高aws实例数量限额还没得到回复，所以先在83上做了GPU部分的实验，可以看到，GPU在深度学习方面要比CPU快得多。
 
-![alt text](https://github.com/RayXu14/Tools-private/blob/master/images/CPUvsGPU.PNG)
+![alt text](https://github.com/RayXu14/Tools/blob/master/images/CPUvsGPU.PNG)
 
 这里我还接触了jupyter notebook/lab里面[%timeit](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-timeit)这个命令。似乎是一个计时的方法。以后我可以考虑写程序时候计时变为标准化操作，这样可以得知各部分跑的时间，以进行优化。
 
