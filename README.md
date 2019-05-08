@@ -1,8 +1,6 @@
 # Tools
 
-工欲善其事，必先利其器。
-
-由于某些原因暂且移入私有库。
+由于某些原因大部分内容 暂且移入私有库。
 
 batch_size=5 on weibo dataset, bert-base-chinese
 
