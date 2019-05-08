@@ -6,11 +6,11 @@
 
 [主教程](https://course.fast.ai/index.html)
 
-[进阶教程·前沿技术](http://course18.fast.ai/part2.html)
+[进阶教程·前沿技术(18年版本，新版未发布)](http://course18.fast.ai/part2.html)
 
-[数学基础](https://github.com/fastai/numerical-linear-algebra/blob/master/README.md)
+[数学基础(fast.ai的理念是让普通人可以做AI，所以他们的教程比较易懂，但不会深入)](https://github.com/fastai/numerical-linear-algebra/blob/master/README.md)
 
-[机器学习](http://course18.fast.ai/ml.html)
+[机器学习(fast.ai的理念是让普通人可以做AI，所以他们的教程比较易懂，但不会深入)](http://course18.fast.ai/ml.html)
 
 可以参考的资源有：
 
@@ -50,65 +50,58 @@ https://blog.csdn.net/cc1949/article/details/79095494
 又发现一个**问题**， 存储空间75G居然才刚好够放环境？！快点删没用的东西，尤其是在conda info --env里面找一找，不然悔之晚矣。也许本次翻车是这个原因。
 
 ## Lessons
+写下我的收获。由于我事先有基础，已知则不论。
 
-*5/4*
-
+###  idea
 * 可以利用google image的数据做一个北大识花app
+* Jereny Howard认为强化学习对大多数人都显然没有鸟用，迁移学习才是正道。
+* Jereny希望把fast.ai做成不需要coding的软件，让普通人都能够做人工智能。
+* Jereny使用随机森林算法寻找最佳超参数，这是AutoML的内容。
 
-*5/5*
+### 底层工具
+* jupyter的工具确实不会清除之前占用的显存。notebook里面的垃圾回收：令模型=None，然后gc.collect()即可，实测在需要用的时候，pytorch就会延迟回收显存。这样可以避免重开notebook的麻烦。
+* fp16有时候结果还更好
 
+### 数据处理
 * 数据处理类
-    * DataBlock的分离机制我还挺喜欢的。
+    * DataBlock的分离机制我还挺喜欢的。DataBlock的更多作用：
+      * 指定预处理
+      * 通过制定类别/浮点列表决定是回归问题还是分类问题
     * DataBunch类基于pytorch的DataLoader。
-* 用小规模/小图片做预训练，可以得到更快的训练速度和更好的泛化能力
+* 迁移学习是“永恒不变的热点”，没有理由不使用预训练数据。
+* 没有理由不利用全部数据。
+
+### 调模型
+* 在fastai库里面，最好的措施已经是默认值
 * train loss和valid loss的关系
     * train loss > valid loss 意味着欠拟合 ->可以增加训练轮次，减小后面的学习率，实在不行只能降低正则化。
     * train loss < valid loss 不意味着过拟合，准确率下降才意味着过拟合。
-* jupyter的工具确实不会清除之前占用的显存。
-* fp16有时候结果还更好
-* 迁移学习是“永恒不变的热点”，
-没有理由不使用预训练数据。
-* 没有理由不利用全部数据
-* 他使用随机森林算法寻找最佳超参数·AutoML
-
-### 分几次跑fit_one_cycle有没有区别?
-经我实验，有。fit_one_cycle里面学习率先升高后降低时针对总batch数的，而不是每个epoch都升降一次。
-
-**discriminate learning rate 最佳递增减幅度为2.6？？？对BERT是如此吗**
-
-*5/6*
-
+* loss散度（波动范围）很大时，参数要么很小要么很大，无法继续训，要从头调学习率再来。
+* 迁移学习要用discriminate learning rate才能取得如此优异的结果。
 * 寻找最佳学习率
     * 解冻前：最大下降斜率处为选择的（最大）学习率，
     * 解冻后：为（最小）学习率，难找的就用最低点除以10（事实上解冻前也是这么选的），
     最大学习率为原来的1/5到1/10
-* 迁移学习要用discriminate learning rate才能取得如此优异的结果
-* loss散度（波动范围）很大时，参数要么很小要么很大，无法继续训，要从头调学习率再来。
 * Adam比SGD好，是momentum+RMSprop。动态学习率，然而还是需要设置学习率。还是得设置学习率退火。不过learner会代劳这些所有事情。
 momentum就是动量加权（移动平均梯度），在SGD函数里面一般设置为0.9。
-* fit_one_cycle的训练loss先大后小是好现象，意味着找到了合适的学习率。               
+* fit_one_cycle里面学习率先升高后降低时针对总batch数的，而不是每个epoch都升降一次。
     * 这个训练方法能使模型稳定训练并获得更好的泛化能力：一开始参数不对，梯度可能带偏；后期只能微小变化，不然过头。
-    * loss一开始就向下的话，需要担心陷入局部最优，影响泛化能力。可能需要调大学习率，挑出局部最优。
-* 正则化
+    * fit_one_cycle的训练loss先大后小是好现象，意味着找到了合适的学习率。loss一开始就向下的话，需要担心陷入局部最优，影响泛化能力。可能需要调大学习率，挑出局部最优。
+* 正则化。这些fastai库可以代劳，设置一下参数就好。
     * weight decay（在我看来L2正则化的权重，但他说是做同一件事情的两个方面）
         * 避免过拟合，不一定要使用较少参数。可以用weight decay。因为参数很小的时候作用就可以很小的。
         * 未有0.1而不好的情况，0.1不需要early stop
         * 少数情况0.1难以拟合，需要0.01，0.01则需要early stop
-    * dropout
+    * dropout。pytorch dropout的时候会把比例除回来，确保量纲一致。
     * batch normalization
         * fast.ai实现的是移动平均的版本
     * data augmentation
-* DataBlock的更多作用
-    * 指定预处理
-    * 通过制定类别/浮点列表决定是回归问题还是分类问题
-* pytorch dropout的时候会把比例除回来，确保量值一致。     
-* 最好的措施已经是默认值
 
-*5/7*
+### CV
+* 用小规模/小图片做预训练，可以得到更快的训练速度和更好的泛化能力。
 
-* notebook里面的垃圾回收：令模型=None，然后gc.collect()即可，实测在需要用的时候，pytorch就会延迟回收显存。这样可以避免重开notebook的麻烦。
+### GAN
 * train gan的时候，由于loss大致不会有大的偏差，所以很难判断结果好坏，基本只能按时查看一下生成的结果。
 
-*5/8*
-* Jereny Howard认为强化学习对大多数人都显然没有鸟用，迁移学习才是正道。
-* Jereny希望把fast.ai做成不需要coding的软件，让普通人都能够做人工智能。
+### 遗留问题
+discriminate learning rate 最佳递增减幅度为2.6？对BERT是如此吗？
