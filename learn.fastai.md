@@ -72,7 +72,7 @@ https://blog.csdn.net/cc1949/article/details/79095494
 * 没有理由不利用全部数据。
 
 ### 调模型
-* 在fastai库里面，最好的措施已经是默认值
+* 在fastai库里面，最好的措施已经是默认值，除了weight decay，为了避免少数情况无法收敛，默认是0.1，最佳其实是0.01。
 * train loss和valid loss的关系
     * train loss > valid loss 意味着欠拟合 ->可以增加训练轮次，减小后面的学习率，实在不行只能降低正则化。
     * train loss < valid loss 不意味着过拟合，准确率下降才意味着过拟合。
