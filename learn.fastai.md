@@ -2,7 +2,9 @@
 # 结论
 
 框架过于细化，操作订得太死，不建议使用。
-使用得过程中陆续察觉到这一点，但都觉得有救，最终促使我不得不放弃Fastai库的便利的是，Leanre类里面，一个batch的读取固定只能读取两个tensor。这实在令人无语。
+
+使用的过程中陆续察觉到这一点，但都觉得有救，最终促使我不得不放弃Fastai库的便利的是，Leanre类里面，一个batch的读取固定只能读取两个tensor。这实在令人无语。
+
 不过我又找到了BERT结合FastAI的方法，从 https://github.com/deepklarity/fastai-bert-finetuning 跳转到 http://mlexplained.com/2019/05/13/a-tutorial-to-fine-tuning-bert-with-fast-ai/ 。也许未来会真香吧。
 
 ---
