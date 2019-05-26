@@ -1,4 +1,5 @@
 # HHKB Lite2 for mac 日版 在windows下
+使用[keyboardshield](https://github.com/RayXu14/Tools/blob/master/files/keyboardshield.exe)
 ## 键位设置
 * 1 usb off 2 notused on 3 backspace&delete exchange off 4 alt&cmd exchange off
 * keyboardshield修改键位
