@@ -6,7 +6,7 @@
 * 中期套牢之后，有长达一个月的时间没有任何操作。
 * 后来操作也不那么频繁了，因为觉得本金不多，有特别合适的时机再进行交易，以避免套牢而白白损耗机会成本。
 
-## 战绩
+## 战绩（截至2019年6月24日）
 ![A股战绩1](https://github.com/RayXu14/Tools/blob/master/img/A%E8%82%A1%E6%88%98%E7%BB%A91.JPEG)
 ![A股战绩2](https://github.com/RayXu14/Tools/blob/master/img/A%E8%82%A1%E6%88%98%E7%BB%A92.JPEG)
 ![A股战绩3](https://github.com/RayXu14/Tools/blob/master/img/A%E8%82%A1%E6%88%98%E7%BB%A93.JPEG)
