@@ -120,7 +120,7 @@
 2. 不知道为什么这两只基金走势不太好，尤其在5月初受到特朗普发推特对中国加税的影响而暴跌，一度亏损超过10%。
 3. 2019/5/10，因为需要用钱，趁一波小涨，将基金全部卖出，【长城智能产业灵活配置混合】到账3813.07元（已扣除手续费19.16元），亏损4.7%；【东方人工智能主题混合】到账3577.15元（已扣除手续费17.97元），亏损10.6%，总体亏损7.6%，也就是609.78元。
 4. 事后发现自己撤的对，不知道为什么，两只基金继续下跌。（这件事告诫我，**人是很贪心的，利令智昏是很正常的事情，我也会这样。一定要保持理智，不要把太多的钱投入基金/股市；一旦划定了额度，就不要轻易增加。**）
-![东方人工智能基金走势](https://github.com/RayXu14/Tools/blob/master/images/%E4%B8%9C%E6%96%B9%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%9F%BA%E9%87%91%E8%B5%B0%E5%8A%BF.jpeg) ![长城智能基金走势](https://github.com/RayXu14/Tools/blob/master/images/%E9%95%BF%E5%9F%8E%E6%99%BA%E8%83%BD%E5%9F%BA%E9%87%91%E8%B5%B0%E5%8A%BF.jpeg)
+![东方人工智能基金走势](https://github.com/RayXu14/Tools/blob/master/img/%E4%B8%9C%E6%96%B9%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%9F%BA%E9%87%91%E8%B5%B0%E5%8A%BF.jpeg) ![长城智能基金走势](https://github.com/RayXu14/Tools/blob/master/img/%E9%95%BF%E5%9F%8E%E6%99%BA%E8%83%BD%E5%9F%BA%E9%87%91%E8%B5%B0%E5%8A%BF.jpeg)
 
 ## 感悟
 
