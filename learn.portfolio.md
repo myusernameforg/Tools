@@ -7,6 +7,12 @@
 * 后来操作也不那么频繁了，因为觉得本金不多，有特别合适的时机再进行交易，以避免套牢而白白损耗机会成本。
 
 ## 战绩
+![A股战绩1](https://github.com/RayXu14/Tools/blob/master/img/A%E8%82%A1%E6%88%98%E7%BB%A91.JPEG)
+![A股战绩2](https://github.com/RayXu14/Tools/blob/master/img/A%E8%82%A1%E6%88%98%E7%BB%A92.JPEG)
+![A股战绩3](https://github.com/RayXu14/Tools/blob/master/img/A%E8%82%A1%E6%88%98%E7%BB%A93.JPEG)
+![A股战绩4](https://github.com/RayXu14/Tools/blob/master/img/A%E8%82%A1%E6%88%98%E7%BB%A94.JPEG)
+说实话，我前期玩U型线右侧交易运气还行，中期忙没注意套牢亏损，后期金字塔法也是稳稳赚钱稳定赢过大盘，最后发现钱都被券商赚走了，虽然我也没亏
+总体来说，我的获利大部分都是在中国长城价值波动的时候逢低买入逢高卖出赚到的。
 
 ## 股市观察和交易流水
 
