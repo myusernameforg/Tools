@@ -11,7 +11,8 @@
 ![A股战绩2](https://github.com/RayXu14/Tools/blob/master/img/A%E8%82%A1%E6%88%98%E7%BB%A92.JPEG)
 ![A股战绩3](https://github.com/RayXu14/Tools/blob/master/img/A%E8%82%A1%E6%88%98%E7%BB%A93.JPEG)
 ![A股战绩4](https://github.com/RayXu14/Tools/blob/master/img/A%E8%82%A1%E6%88%98%E7%BB%A94.JPEG)
-说实话，我前期玩U型线右侧交易运气还行，中期忙没注意套牢亏损，后期金字塔法也是稳稳赚钱稳定赢过大盘，最后发现钱都被券商赚走了，虽然我也没亏
+说实话，我前期玩U型线右侧交易运气还行，中期忙没注意套牢亏损，后期金字塔法也是稳稳赚钱稳定赢过大盘，最后发现钱都被券商赚走了，开赌场的果然稳赚不赔啊，但我倒也没亏。
+
 总体来说，我的获利大部分都是在中国长城价值波动的时候逢低买入逢高卖出赚到的。
 
 ## 股市观察和交易流水
