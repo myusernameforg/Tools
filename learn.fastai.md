@@ -117,4 +117,8 @@ discriminate learning rate 最佳递增减幅度为2.6？对BERT是如此吗？
 *2019/5/29*
 
 2. FastAI包装过头，本来我是想取而用之，不过从发现的这份代码来看，或者进行改装（类的继承）是更好的选择。
-3. 输出过程中Lab断线问题就大了，图像都看不到了。但是事后在learner recorder的记录中可得。loss具体数值可以打印出learner.recorder.losses来看。
+3. 输出过程中Lab断线问题就大了，图像都看不到了。但是事后在learner recorder的记录中可得。loss具体数值可以打印出learner.recorder.losses来看。吧。
+
+--
+*2019/6/26*
+4. 逐渐发现FastAI有很强的定制性，其中以Callback的内容最为灵活。
