@@ -121,4 +121,5 @@ discriminate learning rate 最佳递增减幅度为2.6？对BERT是如此吗？
 
 --
 *2019/6/26*
+
 4. 逐渐发现FastAI有很强的定制性，其中以Callback的内容最为灵活。
