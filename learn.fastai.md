@@ -129,3 +129,8 @@ discriminate learning rate 最佳递增减幅度为2.6？对BERT是如此吗？
 *2019/7/24*
 
 5. find_lr就算有suggestion也不是那么有用，姑且我选择的是最低点之前位置的学习率，以避免学不到最佳值，但是不追求最快收敛了
+
+---
+*2019/7/29*
+
+6. 框架在loss_batch处钉死了输入是单个tensor，这连处理mask都很麻烦，而且找不到相关处理资料。论坛里面回答对我来说又很慢。pytorch1.1已经出了Cyclical Learning Rate，于是我决心逐步放弃fastai
