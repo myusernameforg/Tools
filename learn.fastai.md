@@ -132,4 +132,4 @@ discriminate learning rate 最佳递增减幅度为2.6？对BERT是如此吗？
 ---
 *2019/7/29*
 
-6. 框架在loss_batch处钉死了输入是单个tensor，这连处理mask都很麻烦，而且找不到相关处理资料。论坛里面回答对我来说又很慢。pytorch1.1已经出了Cyclical Learning Rate，于是我决心逐步放弃fastai
+6. 框架在loss_batch处钉死了输入是单个tensor，这连处理mask都很麻烦，而且找不到相关处理资料。**论坛里面回答对我来说又很慢**(这一点很致命，我提问题没人回答)。pytorch1.1已经出了Cyclical Learning Rate，于是我决心逐步放弃fastai
