@@ -46,7 +46,7 @@
             ./frps -c ./21021.ini
             ```
     2. 内网的服务器端
-        2. 在之前所说的文件夹，新建21021.ini写入文件内容，这里1104是我内网jupyterlab的端口。注意custom_domains和之前一样就好了，方便记忆。
+        1. 在之前所说的文件夹，新建21021.ini写入文件内容，这里1104是我内网jupyterlab的端口。注意custom_domains和之前一样就好了，方便记忆。
             ```bash
             [common]
             server_addr = 3.115.94.94
@@ -57,7 +57,7 @@
             local_port = 21021
             custom_domains = sub.your.domain
             ```
-        3. 启动
+        2. 启动
             ```bash
             ./frpc -c ./21021.ini
             ```
