@@ -64,4 +64,4 @@
     3. 访问sub.your.domain:21021，确认成功
    4. 开更多端口如法炮制就行。
         * 如果嫌万一重启一个一个再跑太傻，就统一用nohup输出到分别对应的log挂后台。这样就可以批量映射好多个。
-4. ssh的配置文件写法注意：server port和remote port不能是同一个
+4. frpc ssh的配置文件写法注意：server port和remote port不能是同一个
