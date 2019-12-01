@@ -1,1 +1,26 @@
-
+* 日常
+    * [教学网](http://course.pku.edu.cn/)
+    * [教务部](http://www.dean.pku.edu.cn/)
+    * [网络服务](https://its.pku.edu.cn/)
+    * [校内信息门户（偶尔需要在校内网络环境下）](https://portal.pku.edu.cn/)
+    * [研究生院](https://grs.pku.edu.cn/)
+    * [免费软件下载（必须在校内网络环境下，需要以学生账户登录使用）](http://software.pku.edu.cn/)
+* 阶段性
+    * [迎新网](https://fresh.pku.edu.cn/)
+    * [收费平台](https://cwsf.pku.edu.cn/)
+    * [选课网](elective.pku.edu.cn)
+    * [学生就业指导中心](https://scc.pku.edu.cn/)
+    * [毕业驿站](http://bye.pku.edu.cn/) 
+* 本科专业
+    * [编程网格（不知道是否还被维护，可能需要在校内网络环境下）](http://programming.grids.cn/)
+    * [POJ](http://poj.org/)
+    * [OpenJudge](http://openjudge.cn/)
+    * [Botzone](https://botzone.org.cn/)
+    * [计算机导论课程](https://ics9.pku.edu.cn/)
+    * [网络编程课程](http://net.pku.edu.cn/~zt/wst/)
+    * [CCF大数据比赛](http://www.wid.org.cn/)
+    * [OpenJudge LISP专版](http://lisp.test.openjudge.org/)
+* [主站](https://www.pku.edu.cn/)
+* [未名BBS](https://bbs.pku.edu.cn/)
+* [纪念品网](http://pkuxuezi.cn/) 
+* [标识管理办公室](https://vim.pku.edu.cn/)
