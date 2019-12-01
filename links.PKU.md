@@ -2,9 +2,9 @@
     * [教学网](http://course.pku.edu.cn/)
     * [教务部](http://www.dean.pku.edu.cn/)
     * [网络服务](https://its.pku.edu.cn/)
-    * [校内信息门户（偶尔需要在校内网络环境下）](https://portal.pku.edu.cn/)
+    * [校内信息门户](https://portal.pku.edu.cn/)（偶尔需要在校内网络环境下）
     * [研究生院](https://grs.pku.edu.cn/)
-    * [免费软件下载（必须在校内网络环境下，需要以学生账户登录使用）](http://software.pku.edu.cn/)
+    * [免费软件下载](http://software.pku.edu.cn/)（必须在校内网络环境下，需要以学生账户登录使用）
 * 阶段性
     * [迎新网](https://fresh.pku.edu.cn/)
     * [收费平台](https://cwsf.pku.edu.cn/)
@@ -12,7 +12,7 @@
     * [学生就业指导中心](https://scc.pku.edu.cn/)
     * [毕业驿站](http://bye.pku.edu.cn/) 
 * 本科专业
-    * [编程网格（不知道是否还被维护，可能需要在校内网络环境下）](http://programming.grids.cn/)
+    * [编程网格](http://programming.grids.cn/)（不知道是否还被维护，可能需要在校内网络环境下）
     * [POJ](http://poj.org/)
     * [OpenJudge](http://openjudge.cn/)
     * [Botzone](https://botzone.org.cn/)
