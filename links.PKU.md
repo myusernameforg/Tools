@@ -20,6 +20,10 @@
     * [网络编程课程](http://net.pku.edu.cn/~zt/wst/)
     * [CCF大数据比赛](http://www.wid.org.cn/)
     * [OpenJudge LISP专版](http://lisp.test.openjudge.org/)
+      * [Racket](https://racket-lang.org/)
+    * 汇编语言[MARS](http://courses.missouristate.edu/KenVollmar/Mars/download.htm)
+    * [在线工具](http://courses.missouristate.edu/KenVollmar/Mars/download.htm)，包括各语言的在线编译/解释器
+    * [Google敲门砖](https://code.google.com/codejam/kickstart/resources)
 * [主站](https://www.pku.edu.cn/)
 * [未名BBS](https://bbs.pku.edu.cn/)
 * [纪念品网](http://pkuxuezi.cn/) 
