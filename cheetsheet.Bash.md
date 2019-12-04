@@ -44,3 +44,43 @@
 
 ### Dockerfile
 * 写路径建议用绝对路径。用~会出错。
+
+##　git
+* git commit -m '*message*'
+* git checkout 切换到
+	* -b *branch_name* 创建并切换到对应branch
+	* [branch]
+	* [commit id]
+	* -t origin/[远程分支名]
+* git branch
+	* -d/--delete *branch_name*
+	* -m/--move  *branch_oldname* *branch_newname*
+	* -r/--remote
+* git remote
+	* -v 显示远程分支情况
+	* add *name* *url* 添加远程
+	* rm *name* 删除远程
+* git diff
+	* *blob1* *blob2*
+	* *commit_id* 对比该commit版本和现在的不同
+* git clone *url*
+* git add ... 
+	* 可以同时添加多个目标
+* git log 显示commit的历史概要
+* git show 显示上次commit的改动
+* git pull 拉取改动
+	* 从远程仓库获取所有分支
+		```
+		git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+		git fetch --all
+		git pull --all
+		```
+* git stash 收起上次commit为止到现在的改动到栈中
+	* list 显示收起了几次
+	* pop 弹出一次收起
+	* drop *id* 去除一次收起
+	* clear 清除所有收起
+* git status 显示上次commit到现在的改动文件情况
+* git merge *另一branch* 从本branch合并另一branch
+* git init *repository_name*
+* git push 
