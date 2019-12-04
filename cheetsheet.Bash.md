@@ -45,7 +45,7 @@
 ### Dockerfile
 * 写路径建议用绝对路径。用~会出错。
 
-##　git
+## git
 * git commit -m '*message*'
 * git checkout 切换到
 	* -b *branch_name* 创建并切换到对应branch
