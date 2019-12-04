@@ -4,7 +4,8 @@
 ](https://wiki.ubuntu.org.cn/%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%8C%87%E5%8D%97)
 
 ## 寻求帮助
-命令后面加```-h```或```--help```，或者用```man```命令
+* What: 命令后面加```--version```
+* How: 命令后面加```-h```或```--help```，或者用```man```命令
 
 ## 镜像
 * [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
