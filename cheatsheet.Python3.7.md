@@ -9,7 +9,7 @@
 1. [官方文档](https://docs.python.org/zh-cn/3.7/)
 2. [PyPI](https://pypi.org/)
 
-## 安装包
+## 安装包（是否应该转移到shell那一块？）
 ```bash
 pip install [-i https://pypi.tuna.tsinghua.edu.cn/simple] [-U] package1 [package2 ...]
 ```
