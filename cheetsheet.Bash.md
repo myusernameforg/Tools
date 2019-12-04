@@ -1,5 +1,11 @@
 ## 学习资料
 - [x] https://course.fast.ai/terminal_tutorial.html
+
+## [命令行操作](https://linuxtoy.org/archives/bash-shortcuts.html)
+* Ctrl + a ：移到命令行首
+* Ctrl + e ：移到命令行尾
+* Ctrl + w ：从光标处删除至字首
+* Alt + f : 向前移动一个词
     
 ## 服务器控制相关命令
 * tmux 每次回来环境都一样，并在退出登陆后仍能继续运行
@@ -24,3 +30,17 @@
 * find / -name [filename] 寻找文件名，支持正则表达式
 * diff -u [-r] *path1* *path2*　比较两个文件夹[和子文件夹]中每个文件的不同
 * tail -f *file* 代替不再使用的tailf
+
+## bash脚本
+* [命令行参数](https://www.runoob.com/linux/linux-shell-passing-arguments.html)
+	eg. bash tf-tutorial.sh 'jupyter lab --allow-root'
+* [数组及遍历](https://blog.csdn.net/redhat456/article/details/6068409)
+
+## docker
+* docker push *name*:*tag*
+* docker build -t *name*:*tag* .  -f *dockerfile* 
+* docker run [--runtime=nvidia] --rm -it -v *local_path*:*container_path* -p *local_port*:*container_port*
+* docker tag *origin name* *new name*
+
+### Dockerfile
+* 写路径建议用绝对路径。用~会出错。
