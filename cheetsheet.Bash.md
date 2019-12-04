@@ -57,6 +57,20 @@
 
 ### Dockerfile
 * 写路径建议用绝对路径。用~会出错。
+* [CMD和ENTRYPOINT区别](https://blog.csdn.net/u010900754/article/details/78526443)，推荐使用灵活性更大的CMD
+
+### [Docker镜像的导出与拷贝](https://blog.csdn.net/yelllowcong/article/details/76731668)
+用于网速过慢的情况
+```bash
+#将镜像存储
+docker save nginx:latest > /root/docker-images/nginx.tar
+
+#导入镜像文件
+docker load --input /root/docker-images/nginx.tar
+
+#通过符号的方式来导入
+docker load < /root/docker-images/nginx.tar
+```
 
 ## git
 * git commit -m '*message*'
