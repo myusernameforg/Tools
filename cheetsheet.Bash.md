@@ -24,6 +24,9 @@
 * df -h 显示外存情况
 * date 显示时间
 * ifconfig | grep global 显示公有IP地址
+* 用history命令[不留痕迹的清除部分历史命令记录](不留痕迹的清除部分history历史命令记录)
+	* 在ubuntu我用的命令是```history -r```
+	
 
 ### 弃用
 * screen由tmux替代
