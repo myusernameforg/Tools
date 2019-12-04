@@ -3,7 +3,7 @@
 - [x] 图灵丛书《深度学习入门》·第一章 3.4.1
 - [x] 图灵丛书《Python编程导论（第二版）》 3.5  1~8章
 - [ ] [官方教程](https://docs.python.org/zh-cn/3.7/tutorial/index.html)
-- [ ] [官方文档](https://docs.python.org/zh-cn/3.7/)
+- [ ] [Python进阶](https://eastlakeside.gitbook.io/interpy-zh/)
 
 ## 参考资料
 1. [官方文档](https://docs.python.org/zh-cn/3.7/)
