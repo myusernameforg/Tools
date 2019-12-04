@@ -36,7 +36,7 @@
 * | 管道
 * unzip [-d *path*] *zipfile* 解压zip压缩文件[到某个文件夹]
 * find / -name [filename] 寻找文件名，支持正则表达式
-* diff -u [-r] *path1* *path2*　比较两个文件夹[和子文件夹]中每个文件的不同
+* [diff](https://www.cnblogs.com/peida/archive/2012/12/12/2814048.html) -u [-r] *path1* *path2*　比较两个文件夹[和子文件夹]中每个文件的不同
 * tail -f *file* 代替不再使用的tailf
 
 ## bash脚本
