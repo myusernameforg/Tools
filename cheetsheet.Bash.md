@@ -1,5 +1,10 @@
 ## 学习资料
 - [x] https://course.fast.ai/terminal_tutorial.html
+- [ ] Ubuntu[命令行指南
+](https://wiki.ubuntu.org.cn/%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%8C%87%E5%8D%97)
+
+## 镜像
+* [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
 
 ## [命令行操作](https://linuxtoy.org/archives/bash-shortcuts.html)
 * Ctrl + a ：移到命令行首
