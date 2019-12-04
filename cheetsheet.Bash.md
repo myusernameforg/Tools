@@ -6,14 +6,14 @@
 ## 镜像
 * [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
 
-## [命令行操作](https://linuxtoy.org/archives/bash-shortcuts.html)
+## [命令行跨界件](https://linuxtoy.org/archives/bash-shortcuts.html)
 * Ctrl + a ：移到命令行首
 * Ctrl + e ：移到命令行尾
 * Ctrl + w ：从光标处删除至字首
 * Alt + f : 向前移动一个词
     
 ## 服务器控制相关命令
-* tmux 每次回来环境都一样，并在退出登陆后仍能继续运行
+* [tmux](https://www.cnblogs.com/kaiye/p/6275207.html) 每次回来环境都一样，并在退出登陆后仍能继续运行
     * Ctrl+B
         * % 左右分框
         * " 上下分框
@@ -34,7 +34,8 @@
 ## 文件操作相关命令
 * grep -rn *str* *path* 搜索某个路径下所有文件和子文件夹中文件包含该字符串的行
 * | 管道
-* unzip [-d *path*] *zipfile* 解压zip压缩文件[到某个文件夹]
+* [解压](https://www.jianshu.com/p/ca41f32420d6)
+	* unzip [-d *path*] *zipfile* 解压zip压缩文件[到某个文件夹]
 * find / -name [filename] 寻找文件名，支持正则表达式
 * [diff](https://www.cnblogs.com/peida/archive/2012/12/12/2814048.html) -u [-r] *path1* *path2*　比较两个文件夹[和子文件夹]中每个文件的不同
 * tail -f *file* 代替不再使用的tailf
