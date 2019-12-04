@@ -35,8 +35,8 @@ pip install [-i https://pypi.tuna.tsinghua.edu.cn/simple] [-U] package1 [package
         [2, 0, 1, 3, 4]
         ```
 * copy库
-	* 深度拷贝：和Python往往只传递了引用不同，深度拷贝将遍历以确保复制整个对象
-    	* *target* = copy.deepcopy(*object*)
+	* deepcopy：深度拷贝：和Python往往只传递了引用不同，深度拷贝将遍历以确保复制整个对象
+    	* *target* = deepcopy(*object*)
 * random库
 	* 列表随机inplace排序
     	* random.shuffle(*list*)
@@ -48,15 +48,51 @@ pip install [-i https://pypi.tuna.tsinghua.edu.cn/simple] [-U] package1 [package
 		* 个人一般配合lambda使用
 * [lambda表达式](https://www.cnblogs.com/wanpython/archive/2010/11/01/1865919.html)
 * collections库
-	* collections.Counter
+	* Counter
 * os库
-	* os.environ，是个dict，用来查看和修改环境变量
+	* environ，是个dict，用来查看和修改环境变量
 		* os.environ['CUDA_VISIBLE_DEVICES'] = '0'
-	* os.popen，用以执行bash命令并返回结果作为文件来读取
+	* popen，用以执行bash命令并返回结果作为文件来读取
 		* *result* = os.popen(*command_str*).read()
-	* os.system，用以执行bash命令，不返回结果
+	* system，用以执行bash命令，不返回结果
 		* os.system(*command_str*)
+* math
+	* log
+	* exp
+	* pi
+	* ...
+
 ### 弃用
 * pathlib.Path，要用/延长路径倒是很方便，但是如果要增加文件名后缀，我目前还不知道怎么做。考虑到可以被os库相关操作完全替代，而且也没有方便多少，遂弃用。
 * logging库，有些import的包error不输出到此log，还是直接更改stdout输出，让所有输出都确保能到对应文件罢。
 * collections.default_dict，和dict不同，default_dict一引用某不存在值就会自动创造键，有时候要担心这个特性带来意想不到的后果。
+
+## 第三方库
+* tqdm
+	* tqdm
+		* for *iteritem* in tqdm.tqdm(*iterable*, desc=*str*): ...
+			* ```dest```是进度条左边显示的字符串
+	* trange(...)
+		 * 等价于tqdm.tqdm(range(...))
+* [lxml](https://www.jianshu.com/p/e084c2b2b66d)
+* numpy
+	- [x] CS224预备知识
+* pandas
+	* DataFrame类
+		* to_excel方法
+		* to_csv方法
+		* ix
+		* loc
+			* [在修改值时避免线性调用](https://blog.csdn.net/qq_33711966/article/details/79902276)
+			* 反序：data.iloc[::-1]
+		* iloc
+		* [处理缺失值](https://blog.csdn.net/sinat_29957455/article/details/79017363)
+		* [*ix*]
+			* 取列和修改列
+			* [map方法](https://blog.csdn.net/li_0891/article/details/81020657)
+		* join(*dataframe*, on=*join_key*)
+		* [apply(*function*, axis=1)](https://stackoverflow.com/questions/13331698/how-to-apply-a-function-to-two-columns-of-pandas-dataframe)
+		* [drop_duplicates()](https://stackoverflow.com/questions/13331698/how-to-apply-a-function-to-two-columns-of-pandas-dataframe)
+		* query(*query_str*)
+	* read_csv(*path*, index_col=*index_col*)
+	* concat(*objs*, axis : {0/’index’, 1/’columns’}, sort : bool, default None)
