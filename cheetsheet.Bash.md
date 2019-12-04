@@ -6,7 +6,7 @@
 ## 镜像
 * [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
 
-## [命令行跨界件](https://linuxtoy.org/archives/bash-shortcuts.html)
+## [命令行快捷键](https://linuxtoy.org/archives/bash-shortcuts.html)
 * Ctrl + a ：移到命令行首
 * Ctrl + e ：移到命令行尾
 * Ctrl + w ：从光标处删除至字首
