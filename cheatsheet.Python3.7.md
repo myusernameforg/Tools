@@ -56,11 +56,13 @@ pip install [-i https://pypi.tuna.tsinghua.edu.cn/simple] [-U] package1 [package
 		* *result* = os.popen(*command_str*).read()
 	* system，用以执行bash命令，不返回结果
 		* os.system(*command_str*)
-* math
+* math库
 	* log
 	* exp
 	* pi
 	* ...
+* functools库
+	* [partial](https://zhuanlan.zhihu.com/p/47124891)(*func*, \*args, \*\*keywords)
 * 编码问题：[UnicodeEncodeError 'ascii' codec can't encode characters in position 0-1](https://blog.csdn.net/AckClinkz/article/details/78538462)
 
 ### 弃用
