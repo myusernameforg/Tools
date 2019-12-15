@@ -63,6 +63,7 @@ pip install [-i https://pypi.tuna.tsinghua.edu.cn/simple] [-U] package1 [package
 	* ...
 * functools库
 	* [partial](https://zhuanlan.zhihu.com/p/47124891)(*func*, \*args, \*\*keywords)
+		* Return a new partial object which when called will behave like func called with the positional arguments args and keyword arguments keywords. If more arguments are supplied to the call, they are appended to args. If additional keyword arguments are supplied, they extend and override keywords.
 * 编码问题：[UnicodeEncodeError 'ascii' codec can't encode characters in position 0-1](https://blog.csdn.net/AckClinkz/article/details/78538462)
 
 ### 弃用
