@@ -65,6 +65,8 @@ pip install [-i https://pypi.tuna.tsinghua.edu.cn/simple] [-U] package1 [package
 	* [partial](https://zhuanlan.zhihu.com/p/47124891)(*func*, \*args, \*\*keywords)
 		* Return a new partial object which when called will behave like func called with the positional arguments args and keyword arguments keywords. If more arguments are supplied to the call, they are appended to args. If additional keyword arguments are supplied, they extend and override keywords.
 * 编码问题：[UnicodeEncodeError 'ascii' codec can't encode characters in position 0-1](https://blog.csdn.net/AckClinkz/article/details/78538462)
+* sys库
+	* maxsize，聊以作为最大整数的替代，虽然python3已经没有最大整数了
 
 ### 弃用
 * pathlib.Path，要用/延长路径倒是很方便，但是如果要增加文件名后缀，我目前还不知道怎么做。考虑到可以被os库相关操作完全替代，而且也没有方便多少，遂弃用。
