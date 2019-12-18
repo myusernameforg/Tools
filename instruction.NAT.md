@@ -4,7 +4,7 @@
       * 绑定的时候前部加的子域名不同，可能有的会导致DNS绑定无效，比如www和未指定。我们假设域名为your.domain，子域名为sub，当访问地址的时候显示“sub.your.domain 拒绝了我们的连接请求”而不是“找不到 sub.your.domain 的服务器 IP 地址。”时便成功了
 2. [启动服务](https://github.com/RayXu14/frp/blob/master/README_zh.md)
     1. 有绑定域名独立IP的服务器端（我的在aws）
-        1. 下载并解压 https://github.com/fatedier/frp/releases/download/v0.29.1/frp_0.29.1_linux_386.tar.gz (或者AMD64)
+        1. 下载并解压 https://github.com/fatedier/frp/releases/download/v0.30.0/frp_0.30.0_freebsd_amd64.tar.gz
         2. 进入解压后的文件夹，对frps.ini写入文件内容，这里1104是我内网jupyterlab的端口，为了方便记忆两端设定成一样的。
             ```bash
             [common]
@@ -16,7 +16,7 @@
             ./frps -c ./frps.ini
             ```
     2. 内网的服务器端
-        1. 下载并解压 https://github.com/fatedier/frp/releases/download/v0.29.1/frp_0.29.1_linux_386.tar.gz
+        1. 下载并解压 https://github.com/fatedier/frp/releases/download/v0.30.0/frp_0.30.0_freebsd_amd64.tar.gz
         2. 进入解压后的文件夹，对frpc.ini写入文件内容，这里1104是我内网jupyterlab的端口。
             ```bash
             [common]
