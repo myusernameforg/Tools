@@ -96,6 +96,8 @@ pip install [-i https://pypi.tuna.tsinghua.edu.cn/simple] [-U] package1 [package
 		* [*ix*]
 			* 取列和修改列
 			* [map方法](https://blog.csdn.net/li_0891/article/details/81020657)
+		*  [*condition*]
+			* 选择
 		* join(*dataframe*, on=*join_key*)
 		* [apply(*function*, axis=1)](https://stackoverflow.com/questions/13331698/how-to-apply-a-function-to-two-columns-of-pandas-dataframe)
 		* [drop_duplicates()](https://stackoverflow.com/questions/13331698/how-to-apply-a-function-to-two-columns-of-pandas-dataframe)
