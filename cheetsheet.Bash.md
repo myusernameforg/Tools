@@ -76,13 +76,13 @@ docker load < /root/docker-images/nginx.tar
 1. 修改/etc/docker/daemon.json为
 	```
 	{"registry-mirrors": ["http://f1361db2.m.daocloud.io"],
-    "runtimes": {
-        "nvidia": {
-            "path": "nvidia-container-runtime",
-            "runtimeArgs": []
-        }
-    }
-}
+    	    "runtimes": {
+                "nvidia": {
+                    "path": "nvidia-container-runtime",
+                    "runtimeArgs": []
+        	          }
+    		        }
+	}
 	```
 2. 执行
 	```bash
