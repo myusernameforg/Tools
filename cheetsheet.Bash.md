@@ -72,6 +72,24 @@ docker load --input /root/docker-images/nginx.tar
 docker load < /root/docker-images/nginx.tar
 ```
 
+### [改用国内镜像](https://yeasy.gitbooks.io/docker_practice/install/mirror.html)
+1. 修改/etc/docker/daemon.json为
+	```
+	{"registry-mirrors": ["http://f1361db2.m.daocloud.io"],
+    "runtimes": {
+        "nvidia": {
+            "path": "nvidia-container-runtime",
+            "runtimeArgs": []
+        }
+    }
+}
+	```
+2. 执行
+	```bash
+	$ sudo systemctl daemon-reload
+	$ sudo systemctl restart docker
+	```
+
 ## git
 * git commit -m '*message*'
 * git checkout 切换到
