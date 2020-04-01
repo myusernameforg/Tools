@@ -40,6 +40,8 @@
 * | 管道
 * [解压](https://www.jianshu.com/p/ca41f32420d6)
 	* unzip [-d *path*] *zipfile* 解压zip压缩文件[到某个文件夹]
+	* tar命令在各个版本的Linux都普遍存在，使用 tar zcvf *target* *source1* *source2*... 和tar zxvf解压，比不加z选项的高效
+	* [分卷解压](https://blog.csdn.net/heroacool/article/details/73881680)
 * find / -name [filename] 寻找文件名，支持正则表达式
 * [diff](https://www.cnblogs.com/peida/archive/2012/12/12/2814048.html) -u [-r] *path1* *path2*　比较两个文件夹[和子文件夹]中每个文件的不同
 * tail -f *file* 代替不再使用的tailf
