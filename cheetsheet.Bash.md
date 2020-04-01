@@ -17,34 +17,35 @@
 * Alt + f : 向前移动一个词
     
 ## 服务器控制相关命令
-* [tmux](https://www.cnblogs.com/kaiye/p/6275207.html) 每次回来环境都一样，并在退出登陆后仍能继续运行
+* ```[tmux](https://www.cnblogs.com/kaiye/p/6275207.html)``` 每次回来环境都一样，并在退出登陆后仍能继续运行
     * Ctrl+B
         * % 左右分框
         * " 上下分框
-* htop 显示CPU和内存情况
+* ```htop``` 显示CPU和内存情况
     * t 显示进程数
-* watch -n [seconds] [command] 每隔n秒刷新一次命令显示
-* nvidia-smi 显示显卡情况
-* df -h 显示外存情况
-* date 显示时间
-* ifconfig | grep global 显示公有IP地址
+* ```watch -n [seconds] [command]``` 每隔n秒刷新一次命令显示
+* ```nvidia-smi``` 显示显卡情况
+* ```df -h``` 显示外存情况
+* ```date``` 显示时间
+* ```ifconfig | grep global``` 显示公有IP地址
 * 用history命令[不留痕迹的清除部分历史命令记录](不留痕迹的清除部分history历史命令记录)
 	* 在ubuntu我用的命令是```history -r```
+	* 登录实验室72机器时，上条命令不管用，需要在退出前用```history -c```清楚所有本次会话的命令记录
 	
 
 ### 弃用
-* screen由tmux替代
+* ```screen```由```tmux```替代
 
 ## 文件操作相关命令
-* grep -rn *str* *path* 搜索某个路径下所有文件和子文件夹中文件包含该字符串的行
+* ```grep -rn *str* *path*``` 搜索某个路径下所有文件和子文件夹中文件包含该字符串的行
 * | 管道
 * [解压](https://www.jianshu.com/p/ca41f32420d6)
-	* unzip [-d *path*] *zipfile* 解压zip压缩文件[到某个文件夹]
-	* tar命令在各个版本的Linux都普遍存在，使用 tar zcvf *target* *source1* *source2*... 和tar zxvf解压，比不加z选项的更能压缩大小
+	* ```unzip [-d *path*] *zipfile*``` 解压zip压缩文件[到某个文件夹]
+	* tar命令在各个版本的Linux都普遍存在，使用 ```tar zcvf *target* *source1* *source2*...```压缩成.tar.gz文件和```tar zxvf *tarfile*```解压，比不加z选项的更能压缩大小
 	* [分卷解压](https://blog.csdn.net/heroacool/article/details/73881680)
-* find / -name [filename] 寻找文件名，支持正则表达式
-* [diff](https://www.cnblogs.com/peida/archive/2012/12/12/2814048.html) -u [-r] *path1* *path2*　比较两个文件夹[和子文件夹]中每个文件的不同
-* tail -f *file* 代替不再使用的tailf
+* ```find / -name [filename]``` 寻找文件名，支持正则表达式
+* ```[diff](https://www.cnblogs.com/peida/archive/2012/12/12/2814048.html) -u [-r] *path1* *path2*```　比较两个文件夹[和子文件夹]中每个文件的不同
+* ```tail -f *file*``` 代替不再使用的tailf
 
 ## bash脚本
 * [命令行参数](https://www.runoob.com/linux/linux-shell-passing-arguments.html)
@@ -52,10 +53,10 @@
 * [数组及遍历](https://blog.csdn.net/redhat456/article/details/6068409)
 
 ## docker
-* docker push *name*:*tag*
-* docker build -t *name*:*tag* .  -f *dockerfile* 
-* docker run [--runtime=nvidia] --rm -it -v *local_path*:*container_path* -p *local_port*:*container_port*
-* docker tag *origin name* *new name*
+* ```docker push *name*:*tag*```
+* ```docker build -t *name*:*tag* .  -f *dockerfile* ```
+* ```docker run [--runtime=nvidia] --rm -it -v *local_path*:*container_path* -p *local_port*:*container_port*```
+* ```docker tag *origin name* *new name*```
 
 ### Dockerfile
 * 写路径建议用绝对路径。用~会出错。
