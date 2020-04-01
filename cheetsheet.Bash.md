@@ -17,7 +17,7 @@
 * Alt + f : 向前移动一个词
     
 ## 服务器控制相关命令
-* ```[tmux](https://www.cnblogs.com/kaiye/p/6275207.html)``` 每次回来环境都一样，并在退出登陆后仍能继续运行
+* [```tmux```](https://www.cnblogs.com/kaiye/p/6275207.html) 每次回来环境都一样，并在退出登陆后仍能继续运行
     * Ctrl+B
         * % 左右分框
         * " 上下分框
@@ -44,7 +44,7 @@
 	* tar命令在各个版本的Linux都普遍存在，使用 ```tar zcvf *target* *source1* *source2*...```压缩成.tar.gz文件和```tar zxvf *tarfile*```解压，比不加z选项的更能压缩大小
 	* [分卷解压](https://blog.csdn.net/heroacool/article/details/73881680)
 * ```find / -name [filename]``` 寻找文件名，支持正则表达式
-* ```[diff](https://www.cnblogs.com/peida/archive/2012/12/12/2814048.html) -u [-r] *path1* *path2*```　比较两个文件夹[和子文件夹]中每个文件的不同
+* [```diff -u [-r] *path1* *path2*```　比较两个文件夹[和子文件夹]中每个文件的不同](https://www.cnblogs.com/peida/archive/2012/12/12/2814048.html)
 * ```tail -f *file*``` 代替不再使用的tailf
 
 ## bash脚本
