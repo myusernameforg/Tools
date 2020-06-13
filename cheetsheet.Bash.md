@@ -21,6 +21,7 @@
     * Ctrl+B
         * % 左右分框
         * " 上下分框
+	* [指定名称](https://gist.github.com/ryerh/14b7c24dfd623ef8edc7) ```new -s [name]``` 
 * ```htop``` 显示CPU和内存情况
     * t 显示进程数
 * ```watch -n [seconds] [command]``` 每隔n秒刷新一次命令显示
@@ -76,9 +77,10 @@ docker load < /root/docker-images/nginx.tar
 ```
 
 ### [改用国内镜像](https://yeasy.gitbooks.io/docker_practice/install/mirror.html)
+0. [直接设置docker run的参数](https://www.jianshu.com/p/df75f9b5fcf6)或者
 1. 修改/etc/docker/daemon.json为
 	```
-	{"registry-mirrors": ["http://f1361db2.m.daocloud.io"],
+	{"registry-mirrors": ["http://f1361db2.m.daocloud.io"],  # 也可以是http://hub-mirror.c.163.com或者https://docker.mirrors.ustc.edu.cn
     	    "runtimes": {
                 "nvidia": {
                     "path": "nvidia-container-runtime",
@@ -133,3 +135,7 @@ docker load < /root/docker-images/nginx.tar
 * git init *repository_name*
 * git push 
 * [配置.gitignore文件](https://www.cnblogs.com/kevingrace/p/5690241.html)，注意.gitigore本身不需要包括在列表中，建议git add
+
+# 从云盘拉取文件
+[使用wget下载Google Driver分享文件](https://www.jianshu.com/p/91ff016b7572)
+[如何使用wget命令下载dropbox文件？](https://www.kutu66.com/diannao/article_172796)
