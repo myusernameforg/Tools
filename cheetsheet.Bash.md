@@ -137,5 +137,5 @@ docker load < /root/docker-images/nginx.tar
 * [配置.gitignore文件](https://www.cnblogs.com/kevingrace/p/5690241.html)，注意.gitigore本身不需要包括在列表中，建议git add
 
 # 从云盘拉取文件
-[使用wget下载Google Driver分享文件](https://www.jianshu.com/p/91ff016b7572)
-[如何使用wget命令下载dropbox文件？](https://www.kutu66.com/diannao/article_172796)
+* [使用wget下载Google Driver分享文件](https://www.jianshu.com/p/91ff016b7572)
+* [如何使用wget命令下载dropbox文件？](https://www.kutu66.com/diannao/article_172796)
