@@ -132,3 +132,4 @@ docker load < /root/docker-images/nginx.tar
 * git merge *另一branch* 从本branch合并另一branch
 * git init *repository_name*
 * git push 
+* [配置.gitignore文件](https://www.cnblogs.com/kevingrace/p/5690241.html)，注意.gitigore本身不需要包括在列表中，建议git add
