@@ -104,3 +104,12 @@ pip install [-i https://pypi.tuna.tsinghua.edu.cn/simple] [-U] package1 [package
 		* query(*query_str*)
 	* read_csv(*path*, index_col=*index_col*)
 	* concat(*objs*, axis : {0/’index’, 1/’columns’}, sort : bool, default None)
+## [python 项目自动生成和导入requirements.txt文件](https://blog.csdn.net/Irving_zhang/article/details/79087569)
+### 导出
+```bash
+pip freeze > requirements.txt
+```
+### 导入
+```bash
+pip install -r requirements.txt
+```
