@@ -1,6 +1,6 @@
 ## 非root权限安装docker
-参考[官方教程](https://docs.docker.com/engine/security/rootless/)进行。
-1. * 可能需要```sudo apt update```和```sudo apt update```
+参考了[官方教程](https://docs.docker.com/engine/security/rootless/)
+1. *可能需要```sudo apt update```和```sudo apt update```
 2. *可能需要检查uid数量（一般都符合），```sudo apt install uidmap```并按教程进行检查
 3. ```curl -fsSL https://get.docker.com/rootless | sh```
 4. ```export PATH=/home/xurj/bin:$PATH```
