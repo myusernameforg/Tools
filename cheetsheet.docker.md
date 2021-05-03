@@ -14,6 +14,7 @@
 * ```docker build -t *name*:*tag* .  -f *dockerfile* ```
 * ```docker run [--runtime=nvidia] --rm -it -v *local_path*:*container_path* -p *local_port*:*container_port*```
 * ```docker tag *origin name* *new name*```
+* 在容器内运行命令```docker exec [OPTIONS] CONTAINER COMMAND [ARG...]```
 
 ## Dockerfile
 * 写路径建议用绝对路径。用~会出错。
