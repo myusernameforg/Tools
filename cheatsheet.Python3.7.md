@@ -104,6 +104,12 @@ pip install [-i https://pypi.tuna.tsinghua.edu.cn/simple] [-U] package1 [package
 		* query(*query_str*)
 	* read_csv(*path*, index_col=*index_col*)
 	* concat(*objs*, axis : {0/’index’, 1/’columns’}, sort : bool, default None)
+* matplotlib
+	* [避免matplotlib的默认字体（3）有时候在pdf中无法显示的字体](http://phyletica.org/matplotlib-fonts/)
+		```python
+		matplotlib.rcParams['pdf.fonttype'] = 42
+		matplotlib.rcParams['ps.fonttype'] = 42
+		```
 ## [python 项目自动生成和导入requirements.txt文件](https://blog.csdn.net/Irving_zhang/article/details/79087569)
 ### 导出
 ```bash
