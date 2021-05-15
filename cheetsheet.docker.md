@@ -12,7 +12,7 @@
 ## docker命令
 * ```docker push *name*:*tag*```
 * ```docker build -t *name*:*tag* .  -f *dockerfile* ```
-* ```docker run [--runtime=nvidia] --rm -it -v *local_path*:*container_path* -p *local_port*:*container_port*```
+* ```docker run [--runtime=nvidia] --rm -it -w *container_working_path* -v *local_path*:*container_path* -p *local_port*:*container_port*```
 * ```docker tag *origin name* *new name*```
 * 在容器内运行命令```docker exec [OPTIONS] CONTAINER COMMAND [ARG...]```
 
