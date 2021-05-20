@@ -3,10 +3,11 @@
 1. *可能需要```sudo apt update```和```sudo apt update```
 2. *可能需要检查uid数量（一般都符合），```sudo apt install uidmap```并按教程进行检查
 3. ```curl -fsSL https://get.docker.com/rootless | sh```
-4. ```export PATH=/home/xurj/bin:$PATH```
-5. ```systemctl --user start docker```和```docker context use rootless```，然后重新登录生效
+4. 若第3步有提示操作，则重新登录并跳到第7步
+5. ```export PATH=/home/xurj/bin:$PATH```
+6. ```systemctl --user start docker```和```docker context use rootless```，然后重新登录生效
     * 如果没有root权限，推测每次服务器重启后都需启动。任何时候docker不通，可以尝试以上两条。
-6. ```docker run hello-world```进行测试
+7. ```docker run hello-world```进行测试
 
 
 ## docker命令
