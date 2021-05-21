@@ -9,6 +9,32 @@
     * 如果没有root权限，推测每次服务器重启后都需启动。任何时候docker不通，可以尝试以上两条。
 7. ```docker run hello-world```进行测试
 
+# root权限安装nvidia-docker并在非root权限下使用
+*因为没有找到nvidia-docker特别靠谱的非root安装方式，所以和刘畅要了root来安装。只是权宜之计。*
+1. sudo权限[安装nvidia-docker 2.0](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#setting-up-nvidia-container-toolkit)
+	```bash
+	$distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
+   		&& curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add - \
+   		&& curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+	$ sudo apt-get update
+	$ sudo apt-get install -y nvidia-docker2
+	```
+2. [sudo权限修改/etc/nvidia-container-runtime，令no-cgroups = true](https://github.com/moby/moby/issues/38729)
+3. [注册用户级别的nvidia runtime](https://kien.ai/docker-rootless)，在~/.config/docker/daemon.json写入
+	```
+	$ {
+		"runtimes": {
+			"nvidia": {
+				"path": "nvidia-container-runtime",
+				"runtimeArgs": []
+			}
+		}
+	}
+	```
+5. 重启docker并进行测试
+	```bash
+	$ systemctl --user restart docker1
+	```
 
 ## docker命令
 * ```docker push *name*:*tag*```
