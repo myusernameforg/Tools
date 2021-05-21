@@ -10,7 +10,7 @@
 7. ```docker run hello-world```进行测试
 
 # root权限安装nvidia-docker并在非root权限下使用
-*因为没有找到nvidia-docker特别靠谱的非root安装方式，所以和刘畅要了root来安装。只是权宜之计。*
+> 只是权宜之计。没有找到nvidia-docker特别靠谱的非root安装方式。
 1. sudo权限[安装nvidia-docker 2.0](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#setting-up-nvidia-container-toolkit)
 	```bash
 	$distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
