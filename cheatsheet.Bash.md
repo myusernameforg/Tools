@@ -60,7 +60,7 @@
 	* -a 无视那些未被add的变化
 * git checkout 切换到
 	* --orphan 创建一个全新起点的分支
-		> 要清空全部历史记录只能通过新建分支，add all 并 commit 后删除原分支并把新分支重命名为原分支这种办法，提交的时候要选择强制覆盖远程仓库
+		> 要[清空全部历史记录](https://alex-my.xyz/git-clear-history)只能通过新建分支，add all 并 commit 后删除原分支并把新分支重命名为原分支这种办法，提交的时候要选择强制覆盖远程仓库
 	* -b *branch_name* 创建并切换到对应branch
 	* [branch]
 	* [commit id]
