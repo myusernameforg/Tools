@@ -57,7 +57,10 @@
 
 ## git
 * git commit -m '*message*'
+	* -a 无视那些未被add的变化
 * git checkout 切换到
+	* --orphan 创建一个全新起点的分支
+		> 要清空全部历史记录只能通过新建分支，add all 并 commit 后删除原分支并把新分支重命名为原分支这种办法，提交的时候要选择强制覆盖远程仓库
 	* -b *branch_name* 创建并切换到对应branch
 	* [branch]
 	* [commit id]
@@ -75,6 +78,7 @@
 	* *commit_id* 对比该commit版本和现在的不同
 * git clone *url*
 * git add ... 
+	* -A/--all 添加全部
 	* 可以同时添加多个目标
 * git log 显示commit的历史概要
 * git show 显示上次commit的改动
@@ -94,6 +98,7 @@
 * git merge *另一branch* 从本branch合并另一branch
 * git init *repository_name*
 * git push 
+	* -f origin master 强制覆盖远程仓库的master分支
 * [配置.gitignore文件](https://www.cnblogs.com/kevingrace/p/5690241.html)，注意.gitigore本身不需要包括在列表中，建议git add
 
 # 从云盘拉取文件
